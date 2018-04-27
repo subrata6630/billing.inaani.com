@@ -1,0 +1,149 @@
+
+/*style the main menu*/
+
+
+.myMenu {
+	margin:0;
+	padding:0;
+}
+
+
+.myMenu li {
+	list-style:none;
+	float:left;
+	font:12px Arial, Helvetica, sans-serif #111;
+}
+
+.myMenu li a:link, .myMenu li a:visited{
+	display:block;
+	text-decoration:none;
+	padding: 6px 22px;
+	margin:0;
+	color:#676767;
+}
+
+.myMenu li a:hover ,.myMenu li a:active {
+	background-color:#f26f02;
+	color: #fff;	
+}
+
+/*style the sub menu*/
+.myMenu li ul {
+	position:absolute;
+	visibility:hidden;
+	border: 1px solid #d5d5d5;
+	margin:0;
+	padding:0;
+	z-index: 1000;
+	
+}
+
+.myMenu li ul li {
+	display:inline;
+	float:none;
+}
+
+.myMenu li ul li a:link, .myMenu li ul li a:visited {
+	background-color: #fff;	
+	border-right: 1px solid #fff;
+	margin:0;
+	 padding: 6px 37px 6px 15px;
+	color: #717186;
+	width:auto;
+}
+
+.myMenu li ul li a:hover {
+	background-color: #fff;	
+}
+.product-submenu{background-color: #fff;width: 61%;}
+
+@media (min-width: 320px) and (max-width: 600px){
+.product-submenu  {right:auto;}
+
+}
+@media (max-width: 768px) {
+.myMenu li{width:100%;text-align:left;}
+}
+@media (min-width: 601px) and (max-width: 800px){
+.product-submenu  {right:auto;}
+}
+@media (min-width: 801px) and (max-width: 1024px) {
+.product-submenu  { right: auto; }
+}
+@media (min-width: 1200px) {
+  .product-submenu  { right:367px;}
+}
+.product-menu{}
+.product-menu2{}
+
+/**********blog*************/
+/*custom font for text*/
+@import url(http://fonts.googleapis.com/css?family=Nunito);
+/*CSS file for fontawesome - an iconfont we will be using. This CSS file imported contains the font-face declaration. More info: http://fortawesome.github.io/Font-Awesome/ */
+@import url(../../../thecodeplayer.com/uploads/fonts/fontawesome/css/font-awesome.min.css);
+
+
+#accordian {
+	background: #004050;
+	width: 100%;
+	margin:0;
+	padding:0;
+	color: white;
+	/*Some cool shadow and glow effect*/
+	box-shadow: 
+		0 5px 15px 1px rgba(0, 0, 0, 0.6), 
+		0 0 200px 1px rgba(255, 255, 255, 0.5);
+}
+/*heading styles*/
+#accordian h3 {
+	font-size: 20px;
+	line-height: 34px;
+	padding: 0 10px;
+	cursor: pointer;
+	/*fallback for browsers not supporting gradients*/
+	background: #003040; 
+	background: linear-gradient(#003040, #002535);
+	font-weight:100;
+	 margin-bottom: 1px;
+    margin-top: 0;
+}
+/*heading hover effect*/
+#accordian h3:hover {
+	text-shadow: 0 0 1px rgba(255, 255, 255, 0.7);
+}
+/*iconfont styles*/
+#accordian h3 span {
+	font-size: 16px;
+	margin-right: 10px;
+
+}
+/*list items*/
+#accordian ul{
+	padding: 0;
+}
+#accordian li {
+	list-style-type: none;
+}
+/*links*/
+#accordian ul ul li a {
+	color: #000;
+	text-decoration: none;
+	font-size: 20px;
+	line-height: 27px;
+	display: block;
+	padding: 0 15px;
+	/*transition for smooth hover animation*/
+	transition: all 0.15s;
+	font-weight:100;
+}
+/*hover effect on links*/
+#accordian ul ul li a:hover {
+	background: #003545;
+	border-left: 5px solid lightgreen;
+}
+/*Lets hide the non active LIs by default*/
+#accordian ul ul {
+	display: none;
+}
+#accordian li.active ul {
+	display: block;

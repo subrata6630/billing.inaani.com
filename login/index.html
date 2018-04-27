@@ -1,0 +1,890 @@
+<html>
+<head>
+<base >
+<title> Inaani Switch</title>
+
+<meta name="viewport" content="width=device-width ,initial-scale=1.0"/>
+<meta name="description" content=" add description  ... ">
+
+
+<link href="css/bootstrap.css" type="text/css" media="screen" rel="stylesheet"/>	
+<link href="css/layout.css" rel="stylesheet" media="screen" type="text/css"/>	
+<link href="css/menu.css" rel="stylesheet" media="screen" type="text/css"/>
+<link href="css/default.css" rel="stylesheet" media="screen" type="text/css"/>
+<link rel="stylesheet" href="css/jquery-ui.css">
+
+<link href="http_/maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.html" rel="stylesheet" />
+
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/jquery-ui.js"></script>
+	<script language="JavaScript">
+	
+		function init() {
+			var f = document.forms[0];
+			f.mailPassword.value = 0;
+			f.username.focus();
+			stickyFooter();
+		}
+
+		function forgotPassword() {
+			var f = document.forms[0];
+			f.mailPassword.value = 1;
+		}
+		
+		function validate() {
+			var f = document.forms[0];
+			var ob = f.username;
+			
+			if(isEmpty(ob.value)) {
+				alert("Please enter Username");
+				ob.value = "";
+				ob.focus();
+				return false;
+			}
+			
+			ob = f.password;
+		
+			if(isEmpty(ob.value)) {
+				alert("Please enter Password");
+				ob.value = "";
+				ob.focus();
+				return false;
+			}
+			
+			return true;
+		}
+	</script>
+
+ <script>
+	$(document).ready(function() {
+		$( "#accordion" ).accordion({
+			  heightStyle: "content",
+			  collapsible: true
+		});
+	});			   
+</script>
+ <style type="text/css">
+<!--
+.style1 {
+	color: #FFFFFF;
+	font-weight: bold;
+}
+-->
+ </style>
+</head>
+  
+<body>
+     <!--Navbar Start-->
+	<nav class="navbar-wrapper navbar-default navbar-static-top nav theader-bg" role="navigation">
+		<!--Top-bar Start-->
+		<div class="container-fluid">
+		  <div class="container">
+		    <div class="row">
+		      <div class="col-md-3"> <img src="img/Inaani-logo.png"	alt="logo" class="inaani-logo img-responsive"></div>
+		      <div class="col-md-9">
+		        <div id="myCarousel" class="carousel carousel-fade slide" data-ride="carousel">
+		          <div class="carousel-inner">
+			
+				<div class="active item"> 
+              <li class="news-item">***<strong>91,091 Rate Decreased. Effective on 19/03/2018....</strong>*** 
+              </li>
+            </div>			
+            <div class="item"> 
+              <li class="news-item">***<strong>91,091 Rate Decreased. Effective on 19/03/2018....</strong>*** 
+              </li>
+            </div>
+			
+            <div class="item">
+<li class="news-item"></li>	
+						   </div>
+	              </div>
+		          <a class="carousel-control left" href="img/pre.png" data-slide="prev"> <i class="fa fa-angle-left"></i></a> <a class="carousel-control right" href="img/nxt.png" data-slide="next"> <i class="fa fa-angle-right"></i></a></div>
+	          </div>
+	        </div>
+	      </div>
+	  </div>
+		<!--End Top-menubar-->
+    </nav><!--End Navbar-->	
+	
+
+<div id="main-content">
+
+	<div class="container" style="">
+		<div class="row">
+		<!---- login div----->
+			<div class="col-md-3 login-div col-md-push-9">
+					<h4>User Login</h4>
+					<form class="form-horizontal" action="http://billing.inaani.com/login/Login.do" onSubmit="return validate();" method="POST">
+					<input type="hidden" name="mailPassword" value="0" />
+					<input type="hidden" name="loginURL" value="index.html"/>
+						<div class="form-group">
+							<div class="col-xs-12">
+								<input type="text" name="username" class="form-control" id="" placeholder="User Name" required>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-xs-12">
+								<input type="password" name="password" class="form-control" id="" placeholder="Password" required>
+							</div>
+						</div>
+									<div id = "errorBlock">
+										 
+										
+									
+											
+									</div>
+						<div class="form-group">
+							
+						</div>
+						<div class="form-group">
+							<div class="col-xs-6">
+								
+								<button type="submit" class="btn btn-primary lgin-btn"  id="sbmtLogin" value="" >Login</button>
+							</div>
+							<div class="col-xs-6 forget-p">
+									<label><a href="home/mailPassword.html"  onclick="forgotPassword();" >Forgot Password?</a></label>
+							</div>
+						</div>
+					</form>
+				
+			</div>
+		<div align="left"><b><font color="#CC0033" size="+2">vsr/core4voip link 
+        </font> </b><a href="http://191.96.39.138/user/" target="_blank"><font size="+2" color="#CC0033">http://191.96.39.138/user/</font></a> 
+      </div>		
+      
+      <div class="col-md-9 col-md-pull-3">
+			<div id="accordion">
+				
+			  
+          <h3 align="left"><img src="img/android.png"	alt="" class="img-responsive"></h3>
+			  <div>
+				
+            <table class="table table-bordered">
+              <thead>
+                <tr> 
+                  <th>Country</th>
+                  <th>Dialer Link</th>
+                  <th>Operator Code</th>
+                  <th>Dialer Model</th>
+                </tr>
+              </thead>
+              <tbody>
+               
+				<tr  > 
+                  <td rowspan="8">UAE - Social Media</td>
+                  <td><a href="https://play.google.com/store/search?q=itel%20litedialer">https://play.google.com/store/search?q=itel%20litedialer</a><br>				  </td>
+                  <td>1010</td>
+                  <td>iTel Dialer Lite</td>
+                </tr>
+				  <tr >
+				  <td  >
+				    <a href="https://play.google.com/store/apps/details?id=com.connect.dialer.speed" target="_blank">Connect Dialer Speed</a> <br>                  </td>
+				  <td><strong>1010</strong></td>
+                  <td>Connect Dialer Speed</td>
+				  </tr>
+				  <tr >
+				  <td  >
+				    <a href="https://play.google.com/store/apps/details?id=com.inaani.tpdialer" target="_blank">Inaani TP</a> <br>                  </td>
+				  <td>NA</td>
+                  <td>TP Smart</td>
+				  </tr>
+                <tr class="">
+                  
+                  <td><a href="https://play.google.com/store/apps/details?id=com.revesoft.inaani.social_media_dialer&amp;hl=en" target="_blank">https://play.google.com/store/apps/details?id=com.revesoft.inaani.social_media_dialer&hl=en&nbsp;&nbsp;[PlayStore]</a></td>
+                  <td>NA</td>
+                  <td>iTel(Platinum Express)</td>
+                </tr>
+
+				<tr class=""> 
+                  
+                  <td><a href="http://vd7.me/vs.apk" target="_blank">http://vd7.me/vs.apk</a> 
+                    or <a href="http://37.58.110.104/vs.apk" target="_blank">http://37.58.110.104/vs.apk</a> 
+                    or <a href="https://play.google.com/store/apps/details?id=com.voillo.ultra" target="_blank">[Play Store]</a>  </td>
+                  <td>44000 (New)</td>
+                  <td>Voillo Dialer</td>
+                </tr>
+				<tr class="">
+				  <td><a href="https://play.google.com/store/apps/details?id=com.app.bellvox">https://play.google.com/store/apps/details?id=com.app.bellvox</a></td>
+				  <td>2020</td>
+				  <td>Bellvox Dialer</td>
+			    </tr>
+				 <tr class="">
+				   <td><a href="https://play.google.com/store/apps/details?id=com.app.bellvox">https://play.google.com/store/apps/details?id=com.app.bellvox</a></td>
+				   <td>2020 </td>
+				   <td>Bellvox Dialer</td>
+			    </tr>
+				<tr class="">
+				  <td><a href="http://bitly.com/newtelandroid">http://bitly.com/newtelandroid</a>&nbsp; &nbsp; or &nbsp; &nbsp;<a href="http://173.193.159.92/newtel.apk">http://173.193.159.92/newtel.apk</a></td>
+				  <td>1010 <img src="img/new.gif"	alt="logo" class="inaani-logo img-responsive"></td>
+				  <td>NEWTel Dialer</td>
+			    </tr>
+				
+               
+				
+				<tr  > 
+                  <td rowspan="9">UAE&nbsp;-ETISALAT</td>
+                  <td><a href="https://play.google.com/store/search?q=itel%20litedialer">https://play.google.com/store/search?q=itel%20litedialer</a><br>				  </td>
+                  <td>1010</td>
+                  <td>iTel Dialer Lite</td>
+                </tr>
+				  <tr >
+				  <td  >
+				    <a href="https://play.google.com/store/apps/details?id=com.connect.dialer.speed" target="_blank">Connect Dialer Speed</a> <br>                  </td>
+				  <td><strong>1010</strong></td>
+                  <td>Connect Dialer Speed</td>
+				  </tr>
+				   <tr >
+				  <td  >
+				    <a href="https://play.google.com/store/apps/details?id=com.inaani.tpdialer" target="_blank">Inaani TP</a> <br>                  </td>
+				  <td>NA</td>
+                  <td>TP Smart</td>
+				  </tr>
+				
+				<tr class=""> 
+                  
+                  <td><a href="http://vd7.me/wifi.apk" target="_blank">http://vd7.me/wifi.apk </a></td>
+                  <td>44000 (New)</td>
+                  <td>Voillo Dialer</td>
+                </tr>
+				<tr class=""> 
+                  
+                  <td><a href="http://vd7.me/vdng.apk" target="_blank">http://vd7.me/vdng.apk </a> or <a href="http://37.58.110.104/vdng.apk" target="_blank">http://37.58.110.104/vdng.apk </a>  or <a href="https://play.google.com/store/apps/details?id=com.voillo.androiddialer" target="_blank">[Play Store] </a></td>
+                  <td>44000 (New)</td>
+                  <td>Voillo Dialer (3G)</td>
+                </tr>
+				<tr class="">
+				  
+				  <td><a href="https://play.google.com/store/apps/details?id=com.app.bellvox">https://play.google.com/store/apps/details?id=com.app.bellvox</a></td>
+				  <td>2020</td>
+				  <td>Bellvox Dialer</td>
+				</tr>
+				<tr class="">
+				  
+				  <td><a href="https://play.google.com/store/apps/details?id=com.inaani.ipvipi">https://play.google.com/store/apps/details?id=com.inaani.ipvipi</a></td>
+				  <td>2020</td>
+				  <td>IPVIPI Dialer (wifi and data)</td>
+				</tr>
+				 <tr class="">
+				   <td><a href="https://play.google.com/store/apps/details?id=com.app.bellvox">https://play.google.com/store/apps/details?id=com.app.bellvox</a></td>
+				   <td>2020 </td>
+				   <td>Bellvox Dialer</td>
+			    </tr>
+				<tr class="">
+				  <td><a href="http://bitly.com/newtelandroid">http://bitly.com/newtelandroid</a>&nbsp; &nbsp; or &nbsp; &nbsp;<a href="http://173.193.159.92/newtel.apk">http://173.193.159.92/newtel.apk</a></td>
+				  <td>1010 <img src="img/new.gif"	alt="logo" class="inaani-logo img-responsive"></td>
+				  <td>NEWTel Dialer</td>
+			    </tr>
+                
+				
+				<tr> 
+                  <td rowspan="5">UAE&nbsp;-&nbsp;DU</td>
+                  <td><a href="https://play.google.com/store/search?q=itel%20litedialer">https://play.google.com/store/search?q=itel%20litedialer</a><br>				  </td>
+                  <td>1010</td>
+                  <td>iTel Dialer Lite</td>
+                </tr>
+				  <tr >
+				  <td  >
+				    <a href="https://play.google.com/store/apps/details?id=com.connect.dialer.speed" target="_blank">Connect Dialer Speed</a> <br>                  </td>
+				  <td><strong>1010</strong></td>
+                  <td>Connect Dialer Speed</td>
+				  </tr>
+				 <tr >
+				  <td  >
+				    <a href="https://play.google.com/store/apps/details?id=com.inaani.tpdialer" target="_blank">Inaani TP</a><br>                  </td>
+				  <td>NA</td>
+                  <td>TP Smart</td>
+				  </tr>
+				 <tr class="">
+				   <td><a href="https://play.google.com/store/apps/details?id=com.app.bellvox">https://play.google.com/store/apps/details?id=com.app.bellvox</a></td>
+				   <td>2020 </td>
+				   <td>Bellvox Dialer</td>
+			    </tr>
+				<tr class="">
+				  <td><a href="http://bitly.com/newtelandroid">http://bitly.com/newtelandroid</a>&nbsp; &nbsp; or &nbsp; &nbsp;<a href="http://173.193.159.92/newtel.apk">http://173.193.159.92/newtel.apk</a></td>
+				  <td>1010 <img src="img/new.gif"	alt="logo" class="inaani-logo img-responsive"></td>
+				  <td>NEWTel Dialer</td>
+			    </tr>
+				
+				
+                <tr class=""> 
+                  <td rowspan="5">KSA&nbsp;/&nbsp;ALL</td>
+                  <td><!--<a href="http://31.193.169.246/android.apk" target="_blank">http://31.193.169.246/android.apk</a>&nbsp;&nbsp;--><a href="https://play.google.com/store/apps/details?id=com.revesoft.mobiledialer.inaani&amp;hl=en">[PlayStore]</a></a>
+				  <br>				  </td>
+                  <td>2020, 2233, 2022</td>
+                  <td>iTel</td>
+                </tr>
+                <tr class=""> 
+                  <td><!--<a href="http://31.193.169.246/android.apk" target="_blank">http://31.193.169.246/android.apk</a>&nbsp;&nbsp;--><a href="https://play.google.com/store/apps/details?id=com.revesoft.mobiledialer.inaani&amp;hl=en">[PlayStore]</a></td>
+                  <td>2020,2022</td>
+                  <td>iTel</td>
+                </tr>
+                <tr class="">
+                  <td><a href="https://play.google.com/store/apps/details?id=com.inaani.tpdialer">Inaani TP </a></td>
+                  <td>NA</td>
+                  <td>TP Smart </td>
+                </tr>
+                <tr class="">
+                  <td><a href="https://play.google.com/store/apps/details?id=com.telepacket.TpQuick">TP Quick </a></td>
+                  <td>2020</td>
+                  <td>TP Quick </td>
+                </tr>
+				 <tr class="">
+				   <td><a href="https://play.google.com/store/apps/details?id=com.app.bellvox">https://play.google.com/store/apps/details?id=com.app.bellvox</a></td>
+				   <td>2020 </td>
+				   <td>Bellvox Dialer</td>
+			    </tr>
+				
+                <tr class=""> 
+                  <td rowspan="6" align="center">OMAN</td>
+                  <td><a href="http://31.193.169.246/mdp21" target="_blank">http://31.193.169.246/mdp21</a></td>
+                  <td>2020,1122</td>
+                  <td>Dialer Plus</td>
+                </tr>
+                <tr class=""> 
+                  <td><a href="http://178.62.210.63/416.apk">http://178.62.210.63/416.apk</a>
+                  <br></td>
+                  <td>2020</td>
+                  <td>Hellobyte(new)</td>
+                </tr>
+                <tr class=""> 
+                  <td><!--<a href="http://31.193.169.246/android.apk" target="_blank">http://31.193.169.246/android.apk</a>&nbsp;&nbsp;--><a href="https://play.google.com/store/apps/details?id=com.revesoft.mobiledialer.inaani&amp;hl=en">[PlayStore]</a>
+                  <br>				  </td>
+                  <td>1122</td>
+                  <td>iTel</td>
+                </tr>
+				 <tr >
+				  <td  >
+				    <a href="https://play.google.com/store/apps/details?id=com.inaani.tpdialer" target="_blank">Inaani TP</a> <br>                  </td>
+				  <td>NA</td>
+                  <td>TP Smart</td>
+				  </tr>
+                <tr class="">
+                  <td><a href="https://play.google.com/store/apps/details?id=com.telepacket.TpQuick">TP Quick </a></td>
+                  <td>2020</td>
+                  <td>TP Quick </td>
+                </tr>
+				 <tr class="">
+				   <td><a href="https://play.google.com/store/apps/details?id=com.app.bellvox">https://play.google.com/store/apps/details?id=com.app.bellvox</a></td>
+				   <td>2020 </td>
+				   <td>Bellvox Dialer</td>
+			    </tr>
+                <tr class=""> 
+                  <td align="center"><em>ALL</em></td>
+                  <td><font color="#FF0000"><em><strong><a href="https://play.google.com/store/apps/details?id=com.revesoft.ultradialerinaani" target="_blank">https://play.google.com/store/apps/details?id=com.revesoft.ultradialerinaani</a></strong></em></font></td>
+                  <td><em>2020(New)</em></td>
+                  <td>iTel Ultra Dialer</td>
+                </tr>
+            <!--    <tr class=""> 
+                  <td>Mobile Billing</td>
+                  <td><a href="http://31.193.169.246/BillingApps.apk" target="_blank">http://31.193.169.246/BillingApps.apk</a></td>
+                  <td>Touch Mobile</td>
+                  <td>iTel</td>
+                </tr>-->
+                <tr class=""> 
+                  <td>Mobile Billing</td>
+                  <td><a href="https://play.google.com/store/apps/details?id=com.revesoft.itelswitchplus.inaani" target="_blank">https://play.google.com/store/apps/details?id=com.revesoft.itelswitchplus.inaani</a></td>
+                  <td>Touch Mobile</td>
+                  <td>IP:191.96.39.106 Port: 301</td>
+                </tr>
+              </tbody>
+            </table>
+			</div>
+			
+  
+			<h3><img src="img/nokia.png"	alt="" class="img-responsive"></h3>
+			<div>
+			<table class="table table-bordered">
+              <thead>
+                <tr> 
+                  <th>Country</th>
+                  <th>Dialer Link</th>
+                  <th>Operator Code</th>
+                  <th>Dialer Model</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class=""> 
+                  <td rowspan="7">UAE-ETISALAT</td>
+                  <td><a href="http://173.192.33.95/md367" target="_blank">http://173.192.33.95/md367</a></td>
+                  <td>NA</td>
+                  <td>iTel</td>
+                </tr>
+                <tr class="">
+                  <td><a href="http://31.193.169.246/aircalluae.sis" target="_blank">http://31.193.169.246/aircalluae.sis</a></td>
+                  <td>NA</td>
+                  <td>iTel</td>
+                </tr>
+                <tr class=""> 
+                  <td><a href="http://31.193.169.246/call.sis" target="_blank">http://31.193.169.246/call.sis</a></td>
+                  <td>NA</td>
+                  <td>iTel</td>
+                </tr>
+                <tr class=""> 
+                  <td><a href="http://173.193.161.42/md373">http://173.193.161.42/md373</a></td>
+                  <td>66066</td>
+                  <td>iTel</td>
+                </tr>
+                 <tr class=""> 
+                  <td><a href="http://96.43.84.75/newtel.sis">http://96.43.84.75/newtel.sis</a></td>
+                  <td> 1010   <strong><img src="img/new.gif"	alt="logo" class="inaani-logo img-responsive"></strong></td>
+                  <td> newTel Dialer</td>
+                </tr>
+                <tr class=""> 
+                  <td><a href="http://vd7.me/vdng.sis" target="_blank">http://vd7.me/vdng.sis 
+                    </a> or <a href="http://37.58.110.104/vdng.sis" target="_blank">http://37.58.110.104/vdng.sis 
+                    </a></td>
+                  <td>44000 (New)</td>
+                  <td>Voillo Dialer (wifi)</td>
+                </tr>
+                <tr class=""> 
+                  <td><a href="http://vd7.me/vdng.sis" target="_blank">http://vd7.me/vdng.sis 
+                    </a></td>
+                  <td>44000 (New)</td>
+                  <td>Voillo Dialer (3G)</td>
+                </tr>
+                
+                <tr class=""> 
+                  <td rowspan="6">UAE-ETISALAT-Social</td>
+                  <td><a href="http://173.192.33.95/md367" target="_blank">http://173.192.33.95/md367</a></td>
+                  <td>NA</td>
+                  <td>Social Media</td>
+                </tr>
+                
+                <tr class=""> 
+                  <td><a href="http://31.193.169.246/social.sis" target="_blank">http://31.193.169.246/social.sis</a></td>
+                  <td>NA</td>
+                  <td>Social Media</td>
+                </tr>
+                <tr class="">
+                  <td><a href="http://31.193.169.246/md2.sis" target="_blank">http://31.193.169.246/md2.sis</a></td>
+                  <td>1010</td>
+                  <td>Social Media</td>
+                </tr>
+                <tr class=""> 
+                  <td><a href="http://173.193.161.42/md373">http://173.193.161.42/md373</a></td>
+                  <td>1010</td>
+                  <td>Social Media</td>
+                </tr>
+                 <tr class=""> 
+                  <td><a href="http://96.43.84.75/soc.sis">http://96.43.84.75/soc.sis</a></td>
+                  <td>1010<strong><img src="img/new.gif"	alt="logo" class="inaani-logo img-responsive"></strong> </td>
+                  <td>newTel Dialer for Social  net </td>
+                </tr>
+                
+                <tr class=""> 
+                  <td><a href="http://vd7.me/vs.sis" target="_blank">http://vd7.me/vs.sis 
+                    </a> or <a href="http://37.58.110.104/vs.sis" target="_blank">http://37.58.110.104/vs.sis 
+                    </a></td>
+                  <td>44000 (New)</td>
+                  <td>Voillo Dialer (social)</td>
+                </tr>
+                <tr class=""> 
+                  <td rowspan="4">UAE - DU</td>
+                  <td><a href="http://173.192.33.95/md367" target="_blank">http://173.192.33.95/md367</a></td>
+                  <td>NA</td>
+                  <td>iTel</td>
+                </tr>
+                <tr class=""> 
+                  <td><a href="http://31.193.169.246/inaaniuae" target="_blank">http://31.193.169.246/inaaniuae</a></td>
+                  <td>NA</td>
+                  <td>iTel</td>
+                </tr>
+                <tr class=""> 
+                  <td><a href="http://31.193.169.246/md386.sis">http://31.193.169.246/md386.sis</a></td>
+                  <td>4400</td>
+                  <td>iTel</td>
+                </tr>
+                <tr class=""> 
+                  <td><a href="http://96.43.84.75/newtel.sis"> http://96.43.84.75/newtel.sis</a></td>
+                  <td> 1010 <strong><img src="img/new.gif"	alt="logo" class="inaani-logo img-responsive"></strong></td>
+                  <td> newTel Dialer</td>
+                </tr>
+                
+              
+                
+                <tr class=""> 
+                  <td rowspan="4">KSA&nbsp;/&nbsp;ALL</td>
+                  <td><a href="http://31.193.169.246/easycallksa" target="_blank">http://31.193.169.246/easycallksa</a></td>
+                  <td>NA</td>
+                  <td>iTel</td>
+                </tr>
+                <tr class=""> 
+                  <td><a href="http://31.193.169.246/inaaniksa" target="_blank">http://31.193.169.246/inaaniksa</a></td>
+                  <td>NA</td>
+                  <td>iTel</td>
+                </tr>
+                <tr class=""> 
+                  <td><a href="http://31.193.169.246/directksa.sis" target="_blank">http://31.193.169.246/directksa.sis</a></td>
+                  <td>NA</td>
+                  <td>iTel</td>
+                </tr>
+                <tr class=""> 
+                  <td>h<a href="http://173.193.161.42/md373">ttp://173.193.161.42/md373</a></td>
+                  <td>2020, 2233, 2022</td>
+                  <td>iTel</td>
+                </tr>
+                <tr class=""> 
+                  <td rowspan="5">OMAN</td>
+                  <td><a href="http://31.193.169.246/directuae.sis" target="_blank">http://31.193.169.246/directuae.sis</a></td>
+                  <td>NA</td>
+                  <td>iTel</td>
+                </tr>
+                 
+             
+                <tr class=""> 
+                  <td><a href="http://173.193.161.42/plus573">http://173.193.161.42/plus573</a></td>
+                  <td>2020</td>
+                  <td>iTel</td>
+                </tr>
+                <tr class=""> 
+                  <td><a href="http://96.43.84.75/oman.sis"> http://96.43.84.75/oman.sis</a></td>
+                  <td> 1010 <strong><img src="img/new.gif"	alt="logo" class="inaani-logo img-responsive"></strong></td>
+                  <td>newTel Dialer </td>
+                </tr>
+				 <tr class=""> 
+                  <td><a href="http://173.193.161.42/md373">http://173.193.161.42/md373</a></td>
+                  <td>1122</td>
+                  <td>iTel</td>
+                </tr>
+                <tr class=""> 
+                  <td><a href="http://159.203.1.220/hb42.sis" target="_blank">http://159.203.1.220/hb42.sis</a></td>
+                  <td>2020</td>
+                  <td>Hellobyte(new)</td>
+                </tr>
+                <tr class=""> 
+                  <td>Mobile Billing</td>
+                  <td><a href="http://31.193.169.246/billingnontouch.sis" target="_blank">http://31.193.169.246/billingnontouch.sis</a></td>
+                  <td>Non Touch Mobile</td>
+                  <td>IP:191.96.39.106 Port: 301</td>
+                </tr>
+                
+                <tr class=""> 
+                  <td rowspan="2">For nokia certification/Download issue please 
+                    Download it </td>
+                  <td><a href="http://31.193.169.246/md227.sis" target="_blank">http://31.193.169.246/md227.sis</a></td>
+                  <td>opcode needed</td>
+                  <td>iTel</td>
+                </tr>
+                <tr class=""> 
+                  <td><a href="http://31.193.169.246/socialnew.sis" target="_blank">http://31.193.169.246/socialnew.sis</a></td>
+                  <td>opcode needed</td>
+                  <td>iTel</td>
+                </tr>
+              </tbody>
+            </table>
+			</div>
+			
+			 <h3><img src="img/IOS.png"	alt="" class="img-responsive"></h3>
+			<div>
+			<table class="table table-bordered">
+				<thead>
+						<tr>
+							<th>Country</th>
+							<th>Dialer Link</th>
+							<th>Operator Code</th>
+							<th>Dialer Model</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="">
+							<td rowspan="4">UAE&nbsp;-ETISALAT</td>
+							<td><a href="https://itunes.apple.com/ae/app/inaani/id593313619?mt=8" target="_blank">https://itunes.apple.com/ae/app/inaani/id593313619?mt=8</a></td>
+							<td>NA</td>
+							<td>iTel</td>
+						</tr>
+						
+				<tr class=""> 
+                 
+                  <td><a href="https://itunes.apple.com/us/app/connect-dialer-speed/id1215696116?mt=8" target="_blank">https://itunes.apple.com/us/app/connect-dialer-speed/id1215696116?mt=8</a></td>
+                  <td><strong>1010<img src="img/new.gif"	alt="logo" class="inaani-logo img-responsive"></strong></td>
+                  <td>Connect Dialer Speed</td>
+                </tr>
+						
+				<tr class=""> 
+                 
+                  <td><a href="https://itunes.apple.com/us/app/voillo-dialer/id790122411?mt=8" target="_blank">https://itunes.apple.com/us/app/voillo-dialer/id790122411?mt=8</a></td>
+                  <td>44000 (New)</td>
+                  <td>Voillo Dialer ( 3G)</td>
+                </tr>
+				<tr class=""> 
+                  
+                  <td><a href="https://itunes.apple.com/us/app/voillo-ultra/id1037275881?mt=8" target="_blank">https://itunes.apple.com/us/app/voillo-ultra/id1037275881?mt=8 </a></td>
+                  <td>44000 (New)</td>
+                  <td>Voillo Dialer ( social)</td>
+                </tr>
+				<tr class="">
+                  <td>newTel Dialer for all net </td>
+				  <td><a href="http://bitly.com/newteliphone">http://bitly.com/newteliphone</a></td>
+				  <td>1010<strong><img src="img/new.gif"	alt="logo" class="inaani-logo img-responsive"></strong></td>
+				  <td> newTel Dialer</td>
+				  </tr>
+						
+						<tr class="">
+							<td rowspan="2">UAE - DU</td>
+							<td><a href="https://itunes.apple.com/ae/app/inaani/id593313619?mt=8" target="_blank">https://itunes.apple.com/ae/app/inaani/id593313619?mt=8</a></td>
+							<td>NA</td>
+							<td>iTel</td>
+						</tr>							
+				<tr class=""> 
+                 
+                  <td><a href="https://itunes.apple.com/us/app/connect-dialer-speed/id1215696116?mt=8" target="_blank">https://itunes.apple.com/us/app/connect-dialer-speed/id1215696116?mt=8</a></td>
+                  <td><strong>1010<img src="img/new.gif"	alt="logo" class="inaani-logo img-responsive"></strong></td>
+                  <td>Connect Dialer Speed</td>
+                </tr>
+				<tr class="">
+                  <td>Bellvox Dialer</td>
+				  <td><a href="https://itunes.apple.com/us/app/bellvox/id1219184728?mt=8">https://itunes.apple.com/us/app/bellvox/id1219184728?mt=8</a></td>
+				  <td>2020 <strong><img src="img/new.gif"	alt="logo" class="inaani-logo img-responsive"></strong></td>
+				  <td>Bellvox Dialer</td>
+				  </tr>
+				  <tr class="">
+                   <td>Etislat Wifi & data</td>
+				   <td><a href="https://itunes.apple.com/us/app/ipvipi/id1218827437?mt=8">https://itunes.apple.com/us/app/ipvipi/id1218827437?mt=8</a></td>
+				   <td>2020 <strong><img src="img/new.gif"	alt="logo" class="inaani-logo img-responsive"></strong></td>
+				   <td>IPVIPI diaer (iOS)</td>
+			    </tr>	
+				
+						<tr class="">
+							<td>KSA</td>
+							<td><a href="https://itunes.apple.com/in/app/itel-ultra-dialer/id899106554?mt=8" target="_blank">https://itunes.apple.com/in/app/itel-ultra-dialer/id899106554?mt=8</a></td>
+							<td>2020</td>
+							<td>iTel</td>
+						</tr>
+						<tr class="">
+							<td>Mobile Billing</td>
+							<td><a href="https://itunes.apple.com/ae/app/inaani-splus/id631086338?mt=8" target="_blank">https://itunes.apple.com/ae/app/inaani-splus/id631086338?mt=8</a></td>
+							<td>Touch</td>
+							<td>IOS</td>
+						</tr>
+					</tbody>
+			</table>
+			</div>
+			
+			 <h3><img src="img/Windows.png"	alt="" class="img-responsive"></h3>
+			<div>
+			<table class="table table-bordered">
+				<thead>
+						<tr>
+							<th>Country</th>
+							<th>Dialer Link</th>
+							<th>Operator Code</th>
+							<th>Dialer Model</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="">
+							<td rowspan="3">UAE&nbsp;-&nbsp;ETISALAT</td>
+							<td><a href="http://www.windowsphone.com/en-us/store/app/itelmobiledialer/de0e1e5b-aaad-40b5-bc34-ea60159b7851" target="_blank">http://www.windowsphone.com/en-us/store/app/itelmobiledialer/de0e1e5b-aaad-40b5-bc34-ea60159b7851</a></td>
+							<td>66066</td>
+							<td>iTel</td>
+						</tr>
+						
+							<tr class=""> 
+                 
+                  <td><a href="http://www.windowsphone.com/en-bd/store/app/voillo-dialer/b468cbcb-5998-429b-b96b-f6aafed097e0" target="_blank">http://www.windowsphone.com/en-bd/store/app/voillo-dialer/b468cbcb-5998-429b-b96b-f6aafed097e0 </a> </td>
+                  <td>44000 (New)</td>
+                  <td>Voillo Dialer (3g)</td>
+                </tr>
+				<tr class=""> 
+                  
+                  <td><a href="http://www.windowsphone.com/en-bd/store/app/voillo-ultra/f7a0dc15-8e93-415e-bce2-a5d275779759" target="_blank">http://www.windowsphone.com/en-bd/store/app/voillo-ultra/f7a0dc15-8e93-415e-bce2-a5d275779759 </a> </td>
+                  <td>44000 (New)</td>
+                  <td>Voillo Dialer (wifi)</td>
+                </tr>		
+						<tr class="">
+							<td>UAE&nbsp;-&nbsp;DU</td>
+							<td><a href="http://www.windowsphone.com/en-us/store/app/itelmobiledialer/de0e1e5b-aaad-40b5-bc34-ea60159b7851" target="_blank">http://www.windowsphone.com/en-us/store/app/itelmobiledialer/de0e1e5b-aaad-40b5-bc34-ea60159b7851</a></td>
+							<td>4400</td>
+							<td>iTel</td>
+						</tr>		
+						<tr class="">
+							<td>OMAN</td>
+							<td><a href="http://www.windowsphone.com/en-us/store/app/itelmobiledialer/de0e1e5b-aaad-40b5-bc34-ea60159b7851" target="_blank">http://www.windowsphone.com/en-us/store/app/itelmobiledialer/de0e1e5b-aaad-40b5-bc34-ea60159b7851</a></td>
+							<td>1122</td>
+							<td>iTel</td>
+						</tr>
+						
+					
+<tr class="">
+							<td> newTel Dialer for all net </td>
+							<td><a href="http://bitly.com/newtelwindows" target="_blank">http://bitly.com/newtelwindows</a></td>
+							<td> 1010 <strong><img src="img/new.gif"	alt="logo" class="inaani-logo img-responsive"></strong></td>
+							<td>  newTel Dialer </td>
+						</tr>
+
+					</tbody>
+			</table>
+			</div>
+			
+			<h3><img src="img/PC.png"	alt="" class="img-responsive"></h3>
+			<div style="height:auto !important;">
+			<table class="table table-bordered">
+              <thead>
+                <tr> 
+                  <th width="113">Country</th>
+                  <th width="374">Dialer Link</th>
+                  <th width="115">Operator Code</th>
+                  <th width="104">Dialer Model</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class=""> 
+                  <td rowspan="4">UAE&nbsp;-ETISALAT</td>
+                  <td><a href="http://31.193.169.246/AirCall.exe" target="_blank">http://31.193.169.246/AirCall.exe</a></td>
+                  <td>NA</td>
+                  <td>iTel</td>
+                </tr>
+                <tr class=""> 
+                  <td><a href="http://64.187.222.176/PCDialer.exe">http://64.187.222.176/PCDialer.exe</a></td>
+                  <td>66066</td>
+                  <td>iTel</td>
+                </tr>
+                <tr class=""> 
+                  <td><a href="http://173.192.15.188/PCDialer.msi" target="_blank">http://64.187.222.176/PCDialer.exe</a></td>
+                  <td>66066</td>
+                  <td>iTel</td>
+                </tr>
+				
+				<tr class=""> 
+                 
+                  <td><a href="http://vd7.me/voillopc.rar" target="_blank">http://vd7.me/voillopc.rar</a> or <a href="http://37.58.110.104/voillopc.rar" target="_blank">http://37.58.110.104/voillopc.rar</a> </td>
+                  <td>44000 (New)</td>
+                  <td>Voillo Dialer</td>
+                </tr>
+				
+                <tr class=""> 
+                  <td rowspan="3">UAE&nbsp;-&nbsp;DU</td>
+                  <td><a href="http://31.193.169.246/InaaniUae.exe" target="_blank">http://31.193.169.246/InaaniUae.exe</a></td>
+                  <td>NA</td>
+                  <td>iTel</td>
+                </tr>
+                <tr class=""> 
+                  <td><a href="http://64.187.222.176/PCDialer.exe">http://64.187.222.176/PCDialer.exe</a></td>
+                  <td>4400</td>
+                  <td>iTel</td>
+                </tr>
+                <tr class=""> 
+                  <td><a href="http://173.192.15.188/PCDialer.msi" target="_blank">http://64.187.222.176/PCDialer.exe</a></td>
+                  <td>4400</td>
+                  <td>iTel</td>
+                </tr>
+                <tr class=""> 
+                  <td rowspan="5">KSA&nbsp;/&nbsp;ALL</td>
+                  <td><a href="http://31.193.169.246/Inaani.exe" target="_blank">http://31.193.169.246/Inaani.exe</a></td>
+                  <td>NA</td>
+                  <td>iTel</td>
+                </tr>
+                <tr class=""> 
+                  <td><a href="http://31.193.169.246/EasycallKSA.exe" target="_blank">http://31.193.169.246/EasycallKSA.exe</a></td>
+                  <td>NA</td>
+                  <td>iTel</td>
+                </tr>
+                <tr class=""> 
+                  <td><a href="http://31.193.169.246/DirectKSA.exe" target="_blank">http://31.193.169.246/DirectKSA.exe</a></td>
+                  <td>NA</td>
+                  <td>iTel</td>
+                </tr>
+                <tr class=""> 
+                  <td><a href="http://64.187.222.176/PCDialer.exe">http://64.187.222.176/PCDialer.exe</a></td>
+                  <td>2020, 2233, 2022</td>
+                  <td>iTel</td>
+                </tr>
+                <tr class=""> 
+                  <td><a href="http://173.192.15.188/PCDialer.msi" target="_blank">http://64.187.222.176/PCDialer.exe</a></td>
+                  <td>2020, 2233, 2022</td>
+                  <td>iTel</td>
+                </tr>
+                
+                <tr class=""> 
+                  <td rowspan="3">OMAN</td>
+                  <td><a href="http://31.193.169.246/Direct.exe" target="_blank">http://31.193.169.246/Direct.exe</a></td>
+                  <td>NA</td>
+                  <td>iTel</td>
+                </tr>
+                <tr class=""> 
+                  <td><a href="http://64.187.222.176/PCDialer.exe">http://64.187.222.176/PCDialer.exe</a></td>
+                  <td>1122</td>
+                  <td>iTel</td>
+                </tr>
+                <tr class=""> 
+                  <td><a href="http://173.192.15.188/PCDialer.msi" target="_blank">http://64.187.222.176/PCDialer.exe</a></td>
+                  <td>1122</td>
+                  <td>iTel</td>
+                </tr>
+				<tr class="">
+							<td> newTel Dialer for all net </td>
+							<td><a href="http://96.43.84.75/newtel.msi" target="_blank">  http://96.43.84.75/newtel.msi</a></td>
+							<td> 1010 <strong><img src="img/new.gif"	alt="logo" class="inaani-logo img-responsive"></strong></td>
+							<td> newTel Dialer </td>
+						</tr>
+              </tbody>
+            </table>
+			</div>
+
+			</div>
+		</div>				
+	</div>
+</div> 
+	  
+
+
+</div>
+	
+	
+	
+	<!-------------------------Footer------------------------------------->
+
+         
+	<div id="footer">		
+		<div id="footer-bottom">
+			<!-- /// FOOTER BOTTOM    /////////////////////////////////////////////////////////////////////////////////////////////// -->
+		<div class="container">		
+			<!--<div class="row footer-menu">
+				 <div class="col-md-3">
+                    <ul class="nav nav-list footer-list">
+						<li class="nav-header">Inaani</li>
+						<li ><a href="http://www.inaani.com/about-us.html">About</a></li>
+                        <li><a href="http://www.inaani.com/contact-us.html">Contact Us</a></li>
+                    </ul>
+                   </div>
+                   <div class="col-md-3">
+						<ul class="nav nav-list footer-list">
+							<li class="nav-header">Services</li>					
+							<li><a href="http://www.inaani.com/reseller.html">Retail</a></li>
+							<li><a href="http://www.inaani.com/wholesale.html">Wholesale</a></li>
+							<li><a href="http://www.inaani.com/hosting.html">VoIP Solution</a></li>
+						</ul>
+                   </div>
+                   <div class="col-md-3">
+						<ul class="nav nav-list footer-list">
+							<li class="nav-header">Useful Links</li>
+							<li><a href="http://www.inaani.com/enduser.html#download">Download</a></li>					
+						</ul>
+                   </div>
+				   
+				  <div class="col-md-3">
+                    <ul class="nav nav-list footer-list">
+						<li class="nav-header">Follow Up</li>					
+						<li><a href="https://www.facebook.com/pages/Inaani/178618445481783" target="_blank">Facebook</a></li>
+						<li><a href="https://www.linkedin.com/company/2784091?trk=tyah&trkInfo=tarId%3A1420636184984%2Ctas%3Ainaani%2Cidx%3A2-1-7" target="_blank">LinkedIn</a></li>
+						<li><a href="https://twitter.com/Inaani_Inaani" target="_blank">Twitter</a></li>
+						<li><a href="https://www.youtube.com/channel/UC4NKwIgvLFfiJqOrOzhERiw" target="_blank">Youtube</a></li>
+                    </ul>
+                   </div>  
+			</div>--><!-- end .row -->
+		  </div>
+		</div><!-- end #footer-bottom -->	
+	</div><!-- end #footer -->
+	<div class="copy-right">
+		<div class="container">
+			<div class="row">
+				
+      <div class="col-md-12 copy-right-text"> 
+        </div>
+			</div>
+		</div>	
+	</div>
+		
+</body>
+</html>
